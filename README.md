@@ -11,7 +11,9 @@ Brandon Nguyen
 
 ## Introduction
 The Roommate Matcher will be used to help pair recent graduates with a roommate for when they relocate to a different location. Also, it can be helpful if you aren’t leaving for a new city and can find people that are near you. 
+
 Users will be able to filter what they want in a roommate based on their own preferences such as gender, cleanliness, location, amount of roommates, etc. 
+
 Users will be able to interact with the Roommate Matcher by using our UI and endpoints to find their perfect roommate match!
 
 ## Storyboard
