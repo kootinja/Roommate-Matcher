@@ -42,12 +42,12 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 ![classDiagram (1).pdf](https://github.com/kootinja/Roommate-Matcher/files/7150391/classDiagram.1.pdf)
 
 ### Class Diagram Description
-- ProfileDAO: Interface to show the profile of the user
-- LocationDAO: Interface to gather location data on where the user is going
+- ProfileDAO: Shows the profile of the user
+- LocationDAO: Gathers location data on where the user is going
 - PhotoDAO: Interface to gather pictures of the users of the profile
 - ProfileFilterProcess: Class that represents filter profiles to match roommates together
-- IPhotoDAO:
-- IProfileDAO:
+- IPhotoDAO: Interface to show the photo of the user
+- IProfileDAO: Interface to show the profile of the user
 - ProfilePhotoBase64Adapter: Class that will import photo into JSON for the user's profile
 - Photo: Class that will dispaly the image of the user's profile
 - Location: Class that will display the location
@@ -56,12 +56,11 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 ## JSON Schema
 This is what we plan to export to another app
 
-> { "Gender" : { "type" : "string" }, 
-> "smoking" : { "type" : "boolean" }, "cleanliness" : { "type" : "String" }, "Location" : { "type" : "String" }, "NumberOfPeople" : { "Type" : "double" }, "PriceTotal" : { "type" : "double" }, "SleepSchedule" : { "type" : "String" }, "WorkSchedule" : { "type" : "String" }, "Description" : { "type" : "String" }, "ProfilePicture" : { "type" : "String" }}
+> { "Gender" : { "type" : "string" }, "smoking" : { "type" : "boolean" }, "cleanliness" : { "type" : "String" }, "Location" : { "type" : "String" }, "NumberOfPeople" : { "Type" : "double" }, "PriceTotal" : { "type" : "double" }, "SleepSchedule" : { "type" : "String" }, "WorkSchedule" : { "type" : "String" }, "Description" : { "type" : "String" }, "ProfilePicture" : { "type" : "String" }}
 
 
 ## Team Members and Roles
-- UI Specialist: Brandan Ngyuen, Bhakti Pokhrel
+- UI Specialists: Brandan Ngyuen, Bhakti Pokhrel
 - Logic/Persitence: Robert Hart 
 - DevOps/Product Owner/Scrum Master/GitHub Admin: Jeanette Kootin- Sanwu
 
