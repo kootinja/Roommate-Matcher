@@ -47,8 +47,8 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 ### Class Diagram Descriptions
 - ProfileDAO: Shows the profile of the user
 - LocationDAO: Gathers location data on where the user is going
-- PhotoDAO: Interface to gather pictures of the users of the profile
-- ProfileFilterProcess: Class that represents filter profiles to match roommates together
+- PhotoDAO: Gathers pictures from the users of the profile
+- ProfileFilterProcess: Class that will filter profiles to match roommates together
 - IPhotoDAO: Interface to show the photo of the user
 - IProfileDAO: Interface to show the profile of the user
 - ProfilePhotoBase64Adapter: Class that will import photo into JSON for the user's profile
