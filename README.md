@@ -15,7 +15,7 @@ Users will be able to filter what they want in a roommate based on their own pre
 Users will be able to interact with the Roommate Matcher by using our UI and endpoints to find their perfect roommate match!
 
 ## Storyboard
-![DroneUML](https://user-images.githubusercontent.com/Users/jeanettekootin-sanwu/Downloads/classDiagram.pdf)
+[Storyboard](https://online.visual-paradigm.com/share.jsp?id=313538363632392d32#diagram:workspace=eqtcqchr&proj=0&id=2&view)
 
 ## Requirements
 
