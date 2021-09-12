@@ -40,6 +40,9 @@ Elaborate each of these with several examples in this format:
 ## JSON Schema
 
 ## Team Members and Roles
+UI Specialist: Brandan Ngyuen, Bhakti Pokhrel
+Logic/Persitence: Robert Hart 
+DevOps/Product Owner/Scrum Master/GitHub Admin: Jeanette Kootin- Sanwu
 
 ## Milestones
 
