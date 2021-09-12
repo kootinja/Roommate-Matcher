@@ -63,7 +63,7 @@ This is what we plan to export to another app
 
 
 ## Team Members and Roles
-- UI Specialists: Brandan Ngyuen, Bhakti Pokhrel
+- UI Specialists: Brandon Ngyuen, Bhakti Pokhrel
 - Logic/Persitence: Robert Hart 
 - DevOps/Product Owner/Scrum Master/GitHub Admin: Jeanette Kootin- Sanwu
 
