@@ -37,8 +37,9 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 #### Then: the user will find a list of people who either smoke as well or don’t mind smoking
 
 ## Class Diagram
-![classDiagram.pdf](https://github.com/kootinja/Roommate-Matcher/files/7150388/classDiagram.pdf)
+![classDiagram (1).pdf](https://github.com/kootinja/Roommate-Matcher/files/7150391/classDiagram.1.pdf)
 
+### Class Diagram Description
 ## JSON Schema
 
 ## Team Members and Roles
