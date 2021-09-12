@@ -27,24 +27,24 @@ Users will be able to interact with the Roommate Matcher by using our UI and end
 As a recent graduate, I want to be able to find a match for a roommate when I move to a new city, so that I can have more ease when I’m moving and ensure that I will be able to split rent with somebody.
 
 ### Example 1:
-#### Given: a user wants a roommate that is located in Dallas
-#### When: the user searches “Dallas” in the search box
-#### Then: the user will find a list of people who are moving to dallas for their job
+#### Given: A user wants a roommate that is located in Dallas
+#### When: The user searches “Dallas” in the search box
+#### Then: The user will find a list of people who are moving to dallas for their job
 
 ### Example 2:
-#### Given: a user is a woman and wants a roommate who is also a woman
-#### When: the user filters for their gender preference
-#### Then: the user will find a list of women that they will be able to room with
+#### Given: A user is a woman and wants a roommate who is also a woman
+#### When: The user filters for their gender preference
+#### Then: The user will find a list of women that they will be able to room with
 
 ### Example 3:
-#### Given: a user wants a roommate that doesn’t mind smoking
-#### When: the user filters in the search box “smoking”
-#### Then: the user will find a list of people who either smoke as well or don’t mind smoking
+#### Given: A user wants a roommate that doesn’t mind smoking
+#### When: The user filters in the search box “smoking”
+#### Then: The user will find a list of people who either smoke as well or don’t mind smoking
 
 ## Class Diagram
 ![uml diagramScreenShot](https://user-images.githubusercontent.com/47064092/133006193-42b44880-477e-4fd1-b991-68a618fe363c.JPG)
 
-### Class Diagram Description
+### Class Diagram Descriptions
 - ProfileDAO: Shows the profile of the user
 - LocationDAO: Gathers location data on where the user is going
 - PhotoDAO: Interface to gather pictures of the users of the profile
