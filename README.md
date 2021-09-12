@@ -40,7 +40,12 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 ![classDiagram (1).pdf](https://github.com/kootinja/Roommate-Matcher/files/7150391/classDiagram.1.pdf)
 
 ### Class Diagram Description
+
 ## JSON Schema
+This is what we plan to export to another app
+
+{ "Gender" : { "type" : "string" }, "smoking" : { "type" : "boolean" }, "cleanliness" : { "type" : "String" }, "Location" : { "type" : "String" }, "NumberOfPeople" : { "Type" : "double" }, "PriceTotal" : { "type" : "double" }, "SleepSchedule" : { "type" : "String" }, "WorkSchedule" : { "type" : "String" }, "Description" : { "type" : "String" }, "ProfilePicture" : { "type" : "String" }}
+
 
 ## Team Members and Roles
 - UI Specialist: Brandan Ngyuen, Bhakti Pokhrel
