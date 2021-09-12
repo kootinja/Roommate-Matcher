@@ -42,7 +42,7 @@ As a recent graduate, I want to be able to find a match for a roommate when I mo
 #### Then: the user will find a list of people who either smoke as well or don’t mind smoking
 
 ## Class Diagram
-![classDiagram (1).pdf](https://github.com/kootinja/Roommate-Matcher/files/7150391/classDiagram.1.pdf)
+![uml diagramScreenShot](https://user-images.githubusercontent.com/47064092/133006193-42b44880-477e-4fd1-b991-68a618fe363c.JPG)
 
 ### Class Diagram Description
 - ProfileDAO: Shows the profile of the user
