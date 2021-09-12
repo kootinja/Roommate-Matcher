@@ -38,13 +38,13 @@ Elaborate each of these with several examples in this format:
 ## JSON Schema
 
 ## Team Members and Roles
-UI Specialist: Brandan Ngyuen, Bhakti Pokhrel
-Logic/Persitence: Robert Hart 
-DevOps/Product Owner/Scrum Master/GitHub Admin: Jeanette Kootin- Sanwu
+- UI Specialist: Brandan Ngyuen, Bhakti Pokhrel
+- Logic/Persitence: Robert Hart 
+- DevOps/Product Owner/Scrum Master/GitHub Admin: Jeanette Kootin- Sanwu
 
 ## Milestones
 
 ## Standup
-[We will meet at 7:30 EST on Thursdays (https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTQ4ODBlNTAtZWFjNi00YWFhLWJlNjAtNmM5OTQwZWM3YzBj%40thread.v2/0?context=%7b%22Tid%22%3a%22f5222e6c-5fc6-48eb-8f03-73db18203b63%22%2c%22Oid%22%3a%225705403b-7546-4aac-b858-9d09d3efb663%22%7d)]
+[We will meet at 7:30 EST on Thursdays](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTQ4ODBlNTAtZWFjNi00YWFhLWJlNjAtNmM5OTQwZWM3YzBj%40thread.v2/0?context=%7b%22Tid%22%3a%22f5222e6c-5fc6-48eb-8f03-73db18203b63%22%2c%22Oid%22%3a%225705403b-7546-4aac-b858-9d09d3efb663%22%7d)
 
 
