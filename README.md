@@ -20,15 +20,17 @@ Users will be able to interact with the Roommate Matcher by using our UI and end
 ## Requirements
 
 As a recent graduate, I want to be able to find a match for a roommate when I move to a new city, so that I can have more ease when I’m moving and ensure that I will be able to split rent with somebody.
-Elaborate each of these with several examples in this format:
+
 ### Example 1:
 #### Given: a user wants a roommate that is located in Dallas
 #### When: the user searches “Dallas” in the search box
 #### Then: the user will find a list of people who are moving to dallas for their job
+
 ### Example 2:
 #### Given: a user is a woman and wants a roommate who is also a woman
 #### When: the user filters for their gender preference
 #### Then: the user will find a list of women that they will be able to room with
+
 ### Example 3:
 #### Given: a user wants a roommate that doesn’t mind smoking
 #### When: the user filters in the search box “smoking”
