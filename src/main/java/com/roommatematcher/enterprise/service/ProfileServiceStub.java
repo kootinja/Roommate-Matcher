@@ -39,7 +39,7 @@ public class ProfileServiceStub implements IProfileService {
     }
 
     @Override
-    public Profile fetchByNumberOfRoommates(double numberOfRoommates) {
+    public Profile fetchByNumberOfRoommates(Double numberOfRoommates) {
         Profile profile = new Profile();
         profile.setNumberOfPeople(4.0);
         return profile;

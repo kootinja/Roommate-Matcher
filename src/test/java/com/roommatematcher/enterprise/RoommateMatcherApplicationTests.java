@@ -16,6 +16,7 @@ class RoommateMatcherApplicationTests {
     @Autowired
     private IProfileService profileService; // service that connects/filters all profiles
     private Profile profile; // profile holds all roommate data
+    @Autowired
     private ILocationService locationService;
     private Location location;
 
@@ -354,4 +355,5 @@ class RoommateMatcherApplicationTests {
         int numberOfResidents = location.getNumberOfResidents();
         assertEquals(5,numberOfResidents);
     }
+
 }
