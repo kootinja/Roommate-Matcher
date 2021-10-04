@@ -13,4 +13,21 @@ public interface IProfileService {
     Profile fetchBySmokingPreference(Boolean smokingPreference);
 
     Profile fetchByLocation(String location);
+
+    Profile fetchCleanliness(String cleanliness);
+
+
+    Profile fetchByNumberOfRoommates(double numberOfRoommates);
+
+    Profile fetchBySleepSchedule(String sleepSchedule);
+
+    Profile fetchByWorkSchedule(String workSchedule);
+
+    Profile fetchByProfileDescription(String Description);
+
+    Profile fetchByProfilePicture(String profilePicture);
+
+    Profile fetchByName(String name);
+
+    Profile fetchByAge(int age);
 }
