@@ -2,6 +2,9 @@ package com.roommatematcher.enterprise.service;
 
 import com.roommatematcher.enterprise.dto.Profile;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public interface IProfileService {
     /**
      * Fetch a profile with a given String gender.
@@ -12,5 +15,5 @@ public interface IProfileService {
 
     Profile fetchBySmokingPreference(Boolean smokingPreference);
 
-    Profile fetchByLocation(String location);
+    List<Profile> fetchByLocation(String location);
 }
