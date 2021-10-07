@@ -9,12 +9,12 @@ public @Data
  * @param smokingPreference a boolean indicating if the user is okay with smoking in their home
  * @param cleanliness a string indicating how clean the user is
  * @param location a string storing the users living location
- * @param numberOfPeople a double storing the prefered number of roommates (self included)
+ * @param numberOfPeople a double storing the preferred number of roommates (self included)
  * @param priceTotal a double storing the total price of the profile's living space
  * @param sleepSchedule a string of the profile's sleep schedule
  * @param workSchedule a string storing the profile's expected work schedule
- * @param description @NOTE is this a descrtiption of the user? Of a living space? needs documented by creator
- * @param profilePicture how is a picture stored as a string? Does this referance a file name in  a database?
+ * @param description @NOTE is this a description of the user? Of a living space? needs documented by creator
+ * @param profilePicture how is a picture stored as a string? Does this reference a file name in  a database?
  */
 class Profile {
     private String gender;

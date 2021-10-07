@@ -43,7 +43,7 @@ class RoommateMatcherApplicationTests {
     void fetchRoommatesByGender_returnsRoommatesWomen(){
         givenRoommateIsWomen();
         whenSearchRoommatesWomen();
-        thenReturnListRoommatesFemale();
+        thenReturnListOfFemaleRoommates();
     }
 
     private void givenRoommateIsWomen() {
@@ -52,7 +52,7 @@ class RoommateMatcherApplicationTests {
         profile = profileService.fetchByGender("Women");
     }
     // assertEquals returns false if women is not the gender associated with a profile.
-    private void thenReturnListRoommatesFemale() {
+    private void thenReturnListOfFemaleRoommates() {
         String gender = profile.getGender();
         assertEquals("Female", gender); //static method in another class- ok to use if imported correctly
     }
