@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
@@ -17,6 +19,7 @@ class RoommateMatcherApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
     @Test
@@ -31,7 +34,7 @@ class RoommateMatcherApplicationTests {
     }
 
     private void whenSearchRoommatesForDallas() {
-        profile = profileService.fetchByLocation("Dallas");
+        List<Profile> profiles = profileService.fetchByLocation("Dallas");
     }
 
     private void thenReturnListRoommatesForDallas() {
@@ -47,6 +50,7 @@ class RoommateMatcherApplicationTests {
     }
 
     private void givenRoommateIsWomen() {
+
     }
     private void whenSearchRoommatesWomen() {
         profile = profileService.fetchByGender("Women");
@@ -57,7 +61,6 @@ class RoommateMatcherApplicationTests {
         assertEquals("Female", gender); //static method in another class- ok to use if imported correctly
     }
 
-
     @Test
     void fetchRoommatesOkWithSmoking_returnsRoommatesOkWithSmoking(){
         givenRoommateOkWithSmoking();
@@ -65,7 +68,9 @@ class RoommateMatcherApplicationTests {
         thenReturnListRoommatesOkWithSmoking();
     }
 
-    private void givenRoommateOkWithSmoking() {}
+    private void givenRoommateOkWithSmoking() {
+
+    }
     private void whenSearchRoommatesOkWithSmoking() {
         profile = profileService.fetchBySmokingPreference(true);
     }
