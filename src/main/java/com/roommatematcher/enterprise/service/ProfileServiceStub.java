@@ -32,7 +32,7 @@ public class ProfileServiceStub implements IProfileService {
     }
 
     @Override
-    public Profile fetchByCleanliness(Integer location) {
+    public Profile fetchByCleanliness(Integer cleanlinessRating) {
         Profile profile = new Profile();
         profile.setCleanlinessRating(5);
         return profile;
