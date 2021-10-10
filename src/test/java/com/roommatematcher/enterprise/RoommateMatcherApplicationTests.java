@@ -86,7 +86,7 @@ class RoommateMatcherApplicationTests {
         profile = profileService.fetchByCleanliness(5);
     }
     private void thenReturnListRoommatesWithHighCleanliness() {
-        Integer cleanlinessRating = profile.getCleanlinessRating();// true if they are ok with smoking and false if they don't want it
+        Integer cleanlinessRating = profile.getCleanlinessRating();// true if they have a high cleanliness rating(5)
         assertEquals(5, cleanlinessRating);
     }
 }
