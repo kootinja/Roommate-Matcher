@@ -73,4 +73,20 @@ class RoommateMatcherApplicationTests {
         Boolean smokingPreference = profile.getSmokingPreference();// true if they are ok with smoking and false if they don't want it
         assertEquals(true, smokingPreference);
     }
+
+    @Test
+    void fetchRoommatesWithHighCleanliness_returnsRoommatesWithHihCleanliness(){
+        givenRoommateWithHighCleanliness();
+        whenSearchRoommatesWithHighCleanliness();
+        thenReturnListRoommatesWithHighCleanliness();
+    }
+
+    private void givenRoommateWithHighCleanliness() {}
+    private void whenSearchRoommatesWithHighCleanliness() {
+        profile = profileService.fetchByCleanliness(5);
+    }
+    private void thenReturnListRoommatesWithHighCleanliness() {
+        Integer cleanlinessRating = profile.getCleanlinessRating();// true if they have a high cleanliness rating(5)
+        assertEquals(5, cleanlinessRating);
+    }
 }

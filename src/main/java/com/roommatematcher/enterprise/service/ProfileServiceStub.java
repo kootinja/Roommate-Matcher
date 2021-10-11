@@ -30,4 +30,11 @@ public class ProfileServiceStub implements IProfileService {
         profile.setLocation("Dallas");
         return profile;
     }
+
+    @Override
+    public Profile fetchByCleanliness(Integer cleanlinessRating) {
+        Profile profile = new Profile();
+        profile.setCleanlinessRating(5);
+        return profile;
+    }
 }
