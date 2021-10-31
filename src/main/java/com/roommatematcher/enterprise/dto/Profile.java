@@ -8,7 +8,7 @@ class Profile {
     private Boolean smokingPreference;
     private String cleanliness;
     private String location;
-    private Double numberOfPeople;
+    private Integer numberOfPeople;
     private Double priceTotal;
     private String sleepSchedule;
     private String workSchedule;
