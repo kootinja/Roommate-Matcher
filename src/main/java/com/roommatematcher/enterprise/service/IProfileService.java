@@ -2,6 +2,9 @@ package com.roommatematcher.enterprise.service;
 
 import com.roommatematcher.enterprise.dto.Profile;
 
+import java.io.IOException;
+import java.util.List;
+
 public interface IProfileService {
     /**
      * Fetch a profile with a given String gender.
@@ -30,4 +33,8 @@ public interface IProfileService {
     Profile fetchByName(String name);
 
     Profile fetchByAge(int age);
+
+    List<Profile> fetchAll();
+
+    List<Profile> fetchProfiles(String filterQuery) throws IOException;
 }
