@@ -19,7 +19,6 @@ public class RoomMateController {
         profile.setCleanliness("clean");
         profile.setLocation("cincinnati");
         profile.setNumberOfPeople(2.0);
-        profile.setPriceTotal(500.0);
         profile.setSleepSchedule("night");
         profile.setWorkSchedule("day");
         profile.setDescription("great friend");

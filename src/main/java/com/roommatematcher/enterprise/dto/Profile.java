@@ -9,7 +9,6 @@ class Profile {
     private String cleanliness;
     private String location;
     private Double numberOfPeople;
-    private Double priceTotal;
     private String sleepSchedule;
     private String workSchedule;
     private String description;
