@@ -27,10 +27,4 @@ public class RoomMateController {
         model.addAttribute(profile);
         return "start";
     }
-
-    @RequestMapping ("/findProfile")
-    public String findProfile(Profile profile) {
-        return "start";
-    }
-
 }
