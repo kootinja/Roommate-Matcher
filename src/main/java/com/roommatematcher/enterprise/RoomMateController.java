@@ -1,11 +1,16 @@
 package com.roommatematcher.enterprise;
 
+import com.roommatematcher.enterprise.dto.Profile;
+import com.roommatematcher.enterprise.service.IProfileService;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class RoomMateController {
@@ -18,10 +23,21 @@ public class RoomMateController {
         return "start";
     }
 
-    /*@GetMapping("profiles")
-    public ResponseEntity searchPlants(RequestParam(value="searchTerm", required=false, defaultValue="None") String searchTerm) {
-        return new ResponseEntity(HttpStatus.OK);
+    @GetMapping("/profile")
+    @ResponseBody
+    public List<Profile> fetchProfiles(){
+
+        return IProfileService.fetchAll();
     }
 
-     */
+    @GetMapping("/profile/{id}/")
+    public ResponseEntity fetchMealItemById(@PathVariable("id") String id) {
+        Profile profiles = (Profile) IProfileService.fetchProfiles(Integer.parseInt(id));
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        return new ResponseEntity(profiles, headers, HttpStatus.OK);
+    }
+
+
+
 }
