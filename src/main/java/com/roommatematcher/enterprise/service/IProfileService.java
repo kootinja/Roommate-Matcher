@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.List;
 
 public interface IProfileService {
+    static Object fetchProfiles(int parseInt) {
+    }
+
     /**
      * Fetch a profile with a given String gender.
      * @param gender a string, at the moment just for simplicity only male and female options.
