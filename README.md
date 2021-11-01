@@ -17,7 +17,6 @@ Users will be able to filter what they want in a roommate based on their own pre
 Users will be able to interact with the Roommate Matcher by using our UI and endpoints to find their perfect roommate match!
 
 ## Storyboard
-![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/47064092/133006034-c6ca1c07-5231-4dac-8aa6-b20d0c3c6989.png)
 ![MicrosoftTeams-image (3)](https://user-images.githubusercontent.com/47064092/133006038-a6c6030a-2fd1-433d-a590-c44d53646d82.png)
 
 ## Requirements
