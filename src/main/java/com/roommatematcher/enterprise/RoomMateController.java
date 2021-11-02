@@ -1,11 +1,9 @@
 package com.roommatematcher.enterprise;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.roommatematcher.enterprise.dto.Profile;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class RoomMateController {
@@ -14,14 +12,18 @@ public class RoomMateController {
      * @return
      **/
     @RequestMapping("/")
-    public String index(){
+    public String index(Model model){
+        Profile profile = new Profile();
+        profile.setGender("male");
+        profile.setSmokingPreference(false);
+        profile.setCleanliness("clean");
+        profile.setLocation("cincinnati");
+        profile.setNumberOfPeople(2.0);
+        profile.setSleepSchedule("night");
+        profile.setWorkSchedule("day");
+        profile.setDescription("great friend");
+        profile.setProfilePicture("B's profile");
+        model.addAttribute(profile);
         return "start";
     }
-
-    /*@GetMapping("profiles")
-    public ResponseEntity searchPlants(RequestParam(value="searchTerm", required=false, defaultValue="None") String searchTerm) {
-        return new ResponseEntity(HttpStatus.OK);
-    }
-
-     */
 }
