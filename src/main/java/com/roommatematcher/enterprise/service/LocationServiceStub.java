@@ -38,7 +38,7 @@ public class LocationServiceStub implements ILocationService {
     @Override
     public Location fetchByNumberOfResidents(int numberOfResidents) {
         Location location = new Location();
-        location.setNumberOfResidents(3);
+        location.setNumberOfResidents(5);
         return location;
     }
 
