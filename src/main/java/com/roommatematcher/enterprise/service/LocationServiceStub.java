@@ -41,4 +41,14 @@ public class LocationServiceStub implements ILocationService {
         location.setNumberOfResidents(5);
         return location;
     }
+
+    @Override
+    public Location fetchByPricePerResident(int numberOfResudents, double priceTotal){
+        Location location = new Location();
+        location.setNumberOfResidents(3);
+        location.setTotalPrice(2000.0);
+
+        return location;
+
+    }
 }

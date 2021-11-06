@@ -17,7 +17,7 @@ public class RoomMateController {
         profile.setGender("male");
         profile.setSmokingPreference(false);
         profile.setCleanliness("clean");
-        profile.setLocation("cincinnati");
+        profile.setLocation("Cincinnati");
         profile.setNumberOfPeople(2.0);
         profile.setSleepSchedule("night");
         profile.setWorkSchedule("day");

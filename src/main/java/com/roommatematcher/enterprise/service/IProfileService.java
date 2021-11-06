@@ -19,7 +19,6 @@ public interface IProfileService {
 
     Profile fetchCleanliness(String cleanliness);
 
-
     Profile fetchByNumberOfRoommates(Double numberOfRoommates);
 
     Profile fetchBySleepSchedule(String sleepSchedule);

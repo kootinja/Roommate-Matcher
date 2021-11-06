@@ -12,4 +12,6 @@ public interface ILocationService {
     Location fetchByAllowSmoking(Boolean allowsSmoking);
 
     Location fetchByNumberOfResidents(int numberOfResidents);
+
+    Location fetchByPricePerResident(int numberOfResidents, double priceTotal);
 }

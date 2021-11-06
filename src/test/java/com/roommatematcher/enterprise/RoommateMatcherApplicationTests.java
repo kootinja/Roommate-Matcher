@@ -275,30 +275,31 @@ class RoommateMatcherApplicationTests {
         Double totalPrice = location.getTotalPrice();
         assertEquals(2000.0,totalPrice);
     }
-/*
+
     @Test
     void fetchPricePerPerson_returnPricePerPerson333(){
         //price per person = profile.totalPrice / profile.numberOfResidents
-        givenLocationHas3PeopleAndTotalPriceOf1000();
+        givenLocationHas3PeopleAndTotalPriceOf2000();
         whenPricePerPersonSelected();
-        thenPricePerPersonIs333();
+        thenPricePerPersonIs666();
     }
 
-    private void givenLocationHas3PeopleAndTotalPriceOf1000() {
+    private void givenLocationHas3PeopleAndTotalPriceOf2000() {
     }
 
     private void whenPricePerPersonSelected() {
-        location = locationService.fetchByTotalPrice(1000.0).fetchByNumberOfResidents(3);
+        location = locationService.fetchByPricePerResident(3, 2000.0);
+
     }
 
-    private void thenPricePerPersonIs333() {
-        Double k = 1000.0;
+    private void thenPricePerPersonIs666() {
+        Double k = 2000.0;
         k = k/3;
         Double pricePerPerson = location.getTotalPrice() / location.getNumberOfResidents();
         assertEquals(k,pricePerPerson);
     }
-*/
-    @Test
+
+   @Test
     void fetchStringDescription_returnLocationStringDescription(){
         givenLocationDescription();
         whenLocationDescriptionIsGiven();
@@ -356,4 +357,19 @@ class RoommateMatcherApplicationTests {
         assertEquals(5,numberOfResidents);
     }
 
+    @Test
+    void fetchAllProfiles_returnListOfProfiles(){
+        givenThereAre7Profiles();
+        whenFetchAllIsCalled();
+        returnListOf7Profiles();
+    }
+
+    private void givenThereAre7Profiles() {
+    }
+
+    private void whenFetchAllIsCalled(){
+    }
+
+    private void returnListOf7Profiles(){
+    }
 }
