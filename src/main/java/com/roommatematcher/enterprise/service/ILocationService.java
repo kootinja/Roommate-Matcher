@@ -13,5 +13,5 @@ public interface ILocationService {
 
     Location fetchByNumberOfResidents(int numberOfResidents);
 
-    Location fetchByPricePerResident(int numberOfResudents, double priceTotal);
+    Location fetchByPricePerResident(int numberOfResidents, double priceTotal);
 }

@@ -357,4 +357,19 @@ class RoommateMatcherApplicationTests {
         assertEquals(5,numberOfResidents);
     }
 
+    @Test
+    void fetchAllProfiles_returnListOfProfiles(){
+        givenThereAre7Profiles();
+        whenFetchAllIsCalled();
+        returnListOf7Profiles();
+    }
+
+    private void givenThereAre7Profiles() {
+    }
+
+    private void whenFetchAllIsCalled(){
+    }
+
+    private void returnListOf7Profiles(){
+    }
 }
