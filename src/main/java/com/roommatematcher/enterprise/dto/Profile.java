@@ -2,9 +2,19 @@ package com.roommatematcher.enterprise.dto;
 
 import lombok.Data;
 import com.google.gson.annotations.SerializedName;
+import org.springframework.data.annotation.Id;
 
+import javax.persistence.*;
+
+@Entity
 public @Data
 class Profile {
+
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "profile_id", nullable = false)
+    private Integer profileId;
+
     @SerializedName("gender")
     private String gender;
     @SerializedName("smokingPreference")
