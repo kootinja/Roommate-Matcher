@@ -1,6 +1,7 @@
 package com.roommatematcher.enterprise.service;
 
 import com.roommatematcher.enterprise.dao.IProfileDAO;
+import com.roommatematcher.enterprise.dao.ProfileDAO;
 import com.roommatematcher.enterprise.dto.Profile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -19,7 +20,7 @@ public class ProfileServiceStub implements IProfileService {
 
 
     @Autowired
-    private IProfileDAO profileDao;
+    private IProfileDAO profileDAO;
 
     @Override
     public Profile fetchByGender(String gender) {
@@ -33,6 +34,11 @@ public class ProfileServiceStub implements IProfileService {
         Profile profile = new Profile();
         profile.setSmokingPreference(true);
         return profile;
+    }
+
+    @Override
+    public Profile save(Profile profile) throws Exception {
+        return profileDAO.save(profile);
     }
 
     @Override
@@ -105,6 +111,6 @@ public class ProfileServiceStub implements IProfileService {
 
     @Override
     public List<Profile> fetchProfiles(String filterQuery) throws IOException {
-        return profileDao.fetchProfile(filterQuery);
+        return profileDAO.fetchProfile(filterQuery);
     }
 }

@@ -19,6 +19,11 @@ public interface IProfileService {
 
     Profile fetchCleanliness(String cleanliness);
 
+    /**
+     * Save a profile to a persistence mechanism.
+     * @return a copy of the profile in question so we can validate that the save occurred.
+     */
+    Profile save(Profile profile) throws Exception;
 
     Profile fetchByNumberOfRoommates(Double numberOfRoommates);
 
