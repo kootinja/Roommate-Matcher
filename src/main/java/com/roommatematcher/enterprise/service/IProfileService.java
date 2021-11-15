@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.util.List;
 
 public interface IProfileService {
-    static Object fetchProfiles(int parseInt) {
-    }
-
     /**
      * Fetch a profile with a given String gender.
      * @param gender a string, at the moment just for simplicity only male and female options.
@@ -29,7 +26,7 @@ public interface IProfileService {
 
     Profile fetchByWorkSchedule(String workSchedule);
 
-    Profile fetchByProfileDescription(String Description);
+    Profile fetchByProfileDescription(int Description);
 
     Profile fetchByProfilePicture(String profilePicture);
 
@@ -40,4 +37,8 @@ public interface IProfileService {
     List<Profile> fetchAll();
 
     List<Profile> fetchProfiles(String filterQuery) throws IOException;
+
+    void delete(int parseInt);
+
+    Profile save(Profile profile);
 }

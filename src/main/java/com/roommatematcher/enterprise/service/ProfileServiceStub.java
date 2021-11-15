@@ -3,7 +3,6 @@ package com.roommatematcher.enterprise.service;
 import com.roommatematcher.enterprise.dao.IProfileDAO;
 import com.roommatematcher.enterprise.dto.Profile;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -71,7 +70,7 @@ public class ProfileServiceStub implements IProfileService {
     }
 
     @Override
-    public Profile fetchByProfileDescription(String Description) {
+    public Profile fetchByProfileDescription(int Description) {
         Profile profile = new Profile();
         profile.setDescription("Profile description string here");
         return profile;
