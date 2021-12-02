@@ -24,44 +24,42 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="hero-unit">
-        <h1>Roommate Dashboard</h1>
-        <div class="header_dashboard">
-                    <!-- add filter box -->
-            <input type="searchbar" class="searchbar" placeholder="Search..">
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-        </div>
-        <p class="solid">
-        <label class="container"> Male
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
+        <h1>Roommate Profile</h1>
+        <p>
+            Welcome to The Roommate Matcher Profiles!
+            You can create a new profile and find your match with a potential roommate!
+        </p>
+        <button onclick="listView()"><i class="fa fa-bars"></i> Add/Edit Location</button>
+        <button onclick="gridView()"><i class="fa fa-th-large"></i> Upload Photo</button>
 
-        <label class="container"> Female
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container"> Cleanliness
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container"> Amount of Roommates
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-
-        <a href="/filter" th:href="@{/filter}" class="btn btn-large btn-success">Filter</a>
-        <a href="/cancel" th:href="@{/cancel}" class="btn btn-large btn-success">Cancel</a>
-
-        <p th:text="${profile}"> </p>
+        <div class="row">
+            <div class="column" style="background-color: azure;">
+                <h2> Profile </h2>
+                <p>Name: </p>
+                <p>Age: </p>
+                <p>City: </p>
+            </div>
+            <div class="column" style="background-color: azure;">
+                <h2> Upload Picture </h2>
+                <p> Picture: </p>
             </div>
         </div>
-    </body>
+
+        <div class="row">
+            <div class="column" style="background-color: azure;">
+                <h2> Location Preference </h2>
+                <p> </p>
+            </div>
+        </div>
+
+        <p>
+            <a href="/signup" th:href="@{/signup}" class="btn btn-large btn-success">Sign up</a>
+        </p>
+    </div>
+    <div th:replace="fragments/footer :: footer"> </div>
+</div>
+
 </body>
 </html>
