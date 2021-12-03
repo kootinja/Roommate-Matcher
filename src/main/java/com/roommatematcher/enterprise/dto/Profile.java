@@ -27,4 +27,12 @@ class Profile {
     private String name;
     @SerializedName("age")
     private int age;
+
+    //this method will add increased persistence functionality
+    //when a profile is added to the database, the profile ID will need to be extracted and placed into persistence storage
+    //without this functionality we will have no foreign keys by which we can tie profile attributes together in the database
+    public String getProfileId() {
+        String profileId = "";
+        return profileId;
+    }
 }

@@ -6,5 +6,10 @@ import java.io.IOException;
 import java.util.List;
 
 public interface IProfileDAO {
-List<Profile> fetchProfile(String filterQuery) throws IOException;
+    /**
+     * Returns a list of profiles to be used in a profile autocomplete search function
+     */
+    List<Profile> fetchProfile(String filterQuery) throws IOException;
+
+    Profile save(Profile profile) throws Exception;
 }
